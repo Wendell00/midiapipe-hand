@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@use "@material";
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #3d3d3d;
+  background: white;
+  --mdc-theme-primary: #007f8b;
+  --mdc-theme-on-primary: #f1f3f4;
+}
+
+.btn-cam{
+  width: 180px;
+  height: 60px;
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#canvasImage {
+  display: none;
+}
+.result-verify{
+  width: 120px;
+  height: 80px;
+  background-color: #007f8b;
+  color: black;
+}
+.instructions {
+  width: 60%;
+  text-align: justify;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.innerContainer {
+  position: relative;
+  margin-top: 2rem;
+}
+#webcam {
+  position: relative;
+  top: 20px;
+  left: 0;
+  z-index: 1;
+}
+#canvas {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.wait {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f3f4;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  width: 35%;
+  height: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+}

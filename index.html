@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joguinho com os dedos</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <button id="startWebcamBtn" class="btn-cam">
+      Ligar Camera
+    </button>
+    <div id="container">
+      <div class="innerContainer">
+        <video id="webcam" autoplay playinline></video>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <img src="/me.webp" width="32" height="24" id="canvasImage" />
+    <div id="wait" class="wait" style="display: none">
+      <h2>Aguarde...</h2>
+    </div>
+    <div class="result-verify">
+        
+    </div>
+  </body>
+</html>
